@@ -1,0 +1,181 @@
+
+  /* Reset and base styles */
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #e0e0e0;
+  }
+
+  /* === Hero Section === */
+  
+.hero-section {
+  background: url('../images/cover1.jpg') no-repeat center center;
+  padding-top: 90px; /* match navbar height to avoid overlap */
+
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 90%;
+    padding: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .hero-content .lead {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .btn-custom {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  .btn-custom:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* === Featured Books Section === */
+  .text-feature {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0 15px;
+  }
+
+  .book-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+
+  .book-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .book-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  /* === About Section === */
+  .about-section {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+
+  .about-image {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .about-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  /* === Carousel Section === */
+  .carousel-inner {
+    padding: 20px 0;
+  }
+
+  @media (max-width: 991px) {
+    .carousel-item .row {
+      gap: 1rem;
+    }
+
+    .carousel-item .row > div.col-md-4 {
+      flex: 0 0 calc(50% - 0.5rem);
+      max-width: calc(50% - 0.5rem);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-item .row {
+      flex-direction: column;
+    }
+
+    .carousel-item .row > div.col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .about-title, .about-text {
+      text-align: center;
+    }
+
+    .about-btn {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  /* === Testimonial Icon === */
+  .testimonial-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  /* === Global Transition === */
+  * {
+    transition: all 0.3s ease-in-out;
+  }

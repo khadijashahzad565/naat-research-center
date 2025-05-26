@@ -1,0 +1,93 @@
+ .naat-articles-section {
+    background: url('../images/img10.avif') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 5% 20px;
+    position: relative;
+  }
+
+  .naat-articles-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.83);
+  }
+
+  .naat-articles-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .naat-articles-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .naat-articles-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  #articlesTable tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  
+  .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+
+  /* Mobile table styling */
+  @media (max-width: 768px) {
+    #articlesTable th, 
+    #articlesTable td {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.9rem;
+    }
+    
+    #articlesTable td a {
+      font-size: 0.9rem;
+    }
+    
+    #articlesTable td p {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Extra small devices */
+  @media (max-width: 576px) {
+    .container h2 {
+      font-size: 1.5rem;
+    }
+    
+    #articlesTable th:nth-child(2), 
+    #articlesTable td:nth-child(2) {
+      width: 60px;
+    }
+    
+    #articlesTable th:nth-child(3), 
+    #articlesTable td:nth-child(3) {
+      width: 100px;
+    }
+    
+    .pagination .page-link {
+      padding: 0.25rem 0.5rem;
+    }
+    
+    .input-group-text, 
+    .form-select, 
+    .form-control {
+      font-size: 0.875rem;
+    }
+  }
+
+  /* Smooth transition for responsive elements */
+  .naat-articles-content h1,
+  .naat-articles-content p,
+  #articlesTable th,
+  #articlesTable td,
+  .pagination {
+    transition: all 0.3s ease;
+  }
