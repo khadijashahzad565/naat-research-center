@@ -1,0 +1,86 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 90px; /* ensures smooth scroll targeting after navbar */
+}
+
+/* === Navbar Styles === */
+.navbar {
+  min-height: 70px;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.navbar-brand h4 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* Fixed Top Navbar Styling */
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Nav Links === */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.49);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* === Responsive Navbar === */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+  }
+
+  .nav-link::after {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand h4 {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    padding: 8px 0;
+  }
+}

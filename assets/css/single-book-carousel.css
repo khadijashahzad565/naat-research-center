@@ -1,0 +1,58 @@
+  .book-detail-card {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #fff;
+  }
+
+  .book-detail-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    max-height: 450px;
+    object-fit: cover;
+  }
+
+  .book-meta h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .book-meta h5,
+  .book-meta p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  .book-description {
+    margin-top: 25px;
+    line-height: 1.7;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  .book-links a {
+    display: inline;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+
+  .book-links a:hover {
+    text-decoration: underline;
+  }

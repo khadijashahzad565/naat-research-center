@@ -1,0 +1,91 @@
+  .book-card img {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .books-section {
+    position: relative;
+    background: url('../images/img10.avif') center center/cover no-repeat;
+    padding: 5% 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .books-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.83);
+    z-index: 1;
+  }
+
+  .books-section h1, .books-section p {
+    position: relative;
+    z-index: 2;
+  }
+
+  .books-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .books-section p {
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .book-card {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.book-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.book-card {
+  height: 200px; /* ya jitni chhoti chahiye */
+  overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28); /* subtle shadow */
+
+
+  
+}
+
+.book-card img {
+  height: 200px; /* pehle se kam karein */
+  object-fit: cover;
+}
+
+.book-card:hover {
+  transform: translateY(-18px);
+  transition: transform 0.6s ease;
+}
+
+.pagination .page-item .page-link {
+  color: #000;
+  border: 1px solid #ddd;
+  margin: 0 3px;
+  padding: 8px 15px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
